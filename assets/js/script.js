@@ -35,9 +35,15 @@ function apriChiudiMenu() {
 function clicSulFoglio(evento) {
   const cliccato = evento.target.closest(".elemento");
 
-    menuElementi.classList.remove("aperto");
+  menuElementi.classList.remove("aperto");
 
   if (cliccato === null) {
+    deselezionaTutto();
+    return;
+  }
+
+  // Se clicco di nuovo sullo stesso elemento: deseleziona.
+  if (cliccato === elementoSelezionato) {
     deselezionaTutto();
     return;
   }
@@ -53,8 +59,6 @@ function clicSulFoglio(evento) {
 
   elementoSelezionato = cliccato;
   elementoSelezionato.classList.add("selezionato");
-
-  aggiornaFunzioni();
 }
 
 function selezionaImmagineAside(evento) {
@@ -75,8 +79,6 @@ function selezionaImmagineAside(evento) {
 
   immagineAsideSelezionata = cliccata;
   immagineAsideSelezionata.classList.add("selezionato");
-
-  aggiornaFunzioni();
 }
 
 function creaElemento(immagine) {
@@ -245,16 +247,6 @@ function deselezionaTutto() {
 
   elementoSelezionato = null;
   immagineAsideSelezionata = null;
-
-  aggiornaFunzioni();
-}
-
-function aggiornaFunzioni() {
-  const entrambeSelezionate =
-    elementoSelezionato !== null && immagineAsideSelezionata !== null;
-
-  pulsanteInserisciDopo.disabled = !entrambeSelezionate;
-  pulsanteSostituisci.disabled = !entrambeSelezionate;
 }
 
 function disposizioneRandom() {
