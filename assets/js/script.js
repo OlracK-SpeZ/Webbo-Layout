@@ -12,6 +12,8 @@ const pulsanteDownload = document.getElementById("pulsante-download");
 const pulsanteMenu = document.getElementById("pulsante-menu");
 const pulsanteSu = document.getElementById("pulsante-su");
 const pulsanteGiu = document.getElementById("pulsante-giu");
+const modaleDownload = document.getElementById("modale-download");
+const pulsanteChiudiModale = document.getElementById("chiudi-modale");
 
 let elementoSelezionato = null;
 let immagineAsideSelezionata = null;
@@ -31,6 +33,9 @@ pulsanteDownload.addEventListener("click", scaricaFoglio);
 pulsanteMenu.addEventListener("click", apriChiudiMenu);
 pulsanteSu.addEventListener("click", muoviElementoSu);
 pulsanteGiu.addEventListener("click", muoviElementoGiu);
+pulsanteChiudiModale.addEventListener("click", () => {
+  modaleDownload.close();
+});
 
 function apriChiudiMenu() {
   menuElementi.classList.toggle("aperto");
@@ -325,6 +330,8 @@ async function scaricaFoglio() {
     link.download = "WebboLayout.png";
     link.href = immagine;
     link.click();
+
+    modaleDownload.showModal();
   } catch (errore) {
     console.error("Errore durante il download:", errore);
     alert("Non è stato possibile scaricare il foglio. Controlla la Console.");
