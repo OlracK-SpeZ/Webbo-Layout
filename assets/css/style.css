@@ -107,64 +107,53 @@ a {
 /*---------------------------------PULSANTI---------------------------------*/
 .pulsanti {
   display: flex;
-  gap: 10px;
 }
 
 #pulsante-annulla {
-  padding: 10px 20px;
-  font-size: 50px;
-  font-weight: bold;
-  cursor: pointer;
   color: var(--colore-primario-scuro);
 }
 
 #pulsante-elimina {
-  padding: 10px 20px;
-  font-size: 50px;
-  font-weight: bold;
-  cursor: pointer;
   color: red;
 }
 
 #pulsante-svuota {
-  padding: 10px 20px;
-  font-size: 42px;
-  font-weight: bold;
   cursor: pointer;
   color: var(--colore-secondario-scuro);
 }
 
 #pulsante-inserisci-dopo {
-  padding: 10px 20px;
-  font-size: 50px;
-  font-weight: bold;
-  cursor: pointer;
   color: var(--colore-primario-chiaro);
 }
 
 #pulsante-sostituisci {
-  padding: 10px 20px;
-  font-size: 42px;
-  font-weight: bold;
-  cursor: pointer;
   color: var(--colore-primario-chiaro);
 }
 
-#pulsante-random {
-  padding: 10px 20px;
-  font-size: 42px;
-  font-weight: bold;
-  cursor: pointer;
+#pulsante-menu {
+  display: none;
+  color: var(--colore-primario-chiaro);
+}
+
+#pulsante-su,
+#pulsante-giu {
+  color: var(--colore-pannello-chiaro);
+  margin: 0;
 }
 
 .pulsante-icona {
   display: inline-grid;
   position: relative;
   place-items: center;
+
   padding: 0;
-  margin: 0;
+  margin: 0 10px;
+
   font: inherit;
   line-height: 1;
+  font-size: 42px;
+  font-weight: bold;
+
   cursor: pointer;
 
   transition: transform 0.2s ease-in-out;
@@ -201,12 +190,6 @@ a {
 .pulsante-icona:focus-visible::after {
   opacity: 1;
   visibility: visible;
-}
-
-#pulsante-menu {
-  display: none;
-  font-size: 32px;
-  color: var(--colore-primario-chiaro);
 }
 /*---------------------------------FOGLIO-AREA-LAVORO---------------------------------*/
 #foglio {
@@ -295,22 +278,21 @@ button:disabled {
     font-size: 1.4em;
   }
 
-  .pulsanti {
-    gap: 6px;
+  .pulsante-icona {
+    margin: 0;
+    padding: 0;
   }
 
   #pulsante-annulla,
   #pulsante-elimina,
   #pulsante-inserisci-dopo {
     font-size: 32px;
-    padding: 5px 10px;
   }
 
   #pulsante-svuota,
   #pulsante-sostituisci,
   #pulsante-random {
     font-size: 28px;
-    padding: 5px 10px;
   }
 
   #download-label {
@@ -332,25 +314,27 @@ button:disabled {
     max-width: 250px;
   }
 
+  #pulsante-su::after,
+  #pulsante-giu::after,
   #pulsante-inserisci-dopo::after,
   #pulsante-sostituisci::after {
     position: absolute;
     top: 100%;
     left: -100%;
-    
+
     white-space: unset;
     width: max-content;
     max-width: 250px;
   }
 
   .pulsante-icona:hover {
-  transform: none;
-  text-shadow: 1px 0px 10px var(--colore-secondario-scuro);
-}
+    transform: none;
+    text-shadow: 1px 0px 10px var(--colore-secondario-scuro);
+  }
 
-.pulsante-icona:hover::after {
-  text-shadow: none;
-}
+  .pulsante-icona:hover::after {
+    text-shadow: none;
+  }
 
   .area-lavoro {
     position: relative;
