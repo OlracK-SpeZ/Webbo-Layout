@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webbo Layout</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="barra">
+      <h1 id="titolo"><a href="#">Webbo Layout</a></h1>
+
+      <button
+        id="pulsante-menu"
+        class="pulsante-icona"
+        aria-label="Apri menu elementi"
+        title="Menu elementi"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <div class="pulsanti">
+        <button
+          id="pulsante-random"
+          class="pulsante-icona"
+          aria-label="Random"
+          title="Disposizione random"
+        >
+          <span aria-hidden="true">🎲</span>
+        </button>
+        <button
+          id="pulsante-svuota"
+          class="pulsante-icona"
+          aria-label="Svuota foglio"
+          title="Svuota foglio"
+        >
+          <span aria-hidden="true">🗑</span>
+        </button>
+        <button
+          id="pulsante-annulla"
+          class="pulsante-icona"
+          aria-label="Annulla ultima azione"
+          title="Annulla ultima azione"
+        >
+          <span aria-hidden="true">↶</span>
+        </button>
+        <button
+          id="pulsante-elimina"
+          class="pulsante-icona"
+          aria-label="Elimina elemento"
+          title="Elimina elemento"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+
+        <button
+          id="pulsante-inserisci-dopo"
+          class="pulsante-icona"
+          aria-label="Inserisci dopo"
+          title="Inserisci dopo"
+        >
+          <span aria-hidden="true">+</span>
+        </button>
+        <button
+          id="pulsante-sostituisci"
+          class="pulsante-icona"
+          aria-label="Sostituisci"
+          title="Sostituisci"
+        >
+          <span aria-hidden="true">⇄</span>
+        </button>
+      </div>
+      <p class="page">
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub page</a>
+      </p>
+      <button
+        id="pulsante-download"
+        type="button"
+        aria-label="Scarica il foglio come immagine"
+        title="Scarica il foglio come immagine"
+      >
+        <span aria-hidden="true" id="download-label">Download Layout</span>
+      </button>
+    </header>
+
+    <div class="area-lavoro">
+      <main id="foglio"></main>
+
+      <aside id="menu-elementi">
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-1"
+          src="assets/img/elemento-1.png"
+          alt="Elemento 1"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-2"
+          src="assets/img/elemento-2.png"
+          alt="Elemento 2"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-3"
+          src="assets/img/elemento-3.png"
+          alt="Elemento 3"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-4"
+          src="assets/img/elemento-4.png"
+          alt="Elemento 4"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-5"
+          src="assets/img/elemento-5.png"
+          alt="Elemento 5"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-6"
+          src="assets/img/elemento-6.png"
+          alt="Elemento 6"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-7"
+          src="assets/img/elemento-7.png"
+          alt="Elemento 7"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-8"
+          src="assets/img/elemento-8.png"
+          alt="Elemento 8"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-9"
+          src="assets/img/elemento-9.png"
+          alt="Elemento 9"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-10"
+          src="assets/img/elemento-10.png"
+          alt="Elemento 10"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-11"
+          src="assets/img/elemento-11.png"
+          alt="Elemento 11"
+        />
+        <img
+          class="elemento-menu"
+          data-elemento="elemento-12"
+          src="assets/img/elemento-12.png"
+          alt="Elemento 12"
+        />
+      </aside>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/dist/html-to-image.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
