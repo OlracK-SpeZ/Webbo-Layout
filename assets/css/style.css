@@ -317,6 +317,32 @@ button:disabled {
     padding: 5px 10px;
   }
 
+  #pulsante-random::after,
+  #pulsante-svuota::after,
+  #pulsante-annulla::after {
+    width: max-content;
+    max-width: 60vw;
+    left: 0;
+    transform: none;
+  }
+
+  #pulsante-elimina::after {
+    white-space: normal;
+    width: max-content;
+    max-width: 250px;
+  }
+
+  #pulsante-inserisci-dopo::after,
+  #pulsante-sostituisci::after {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    
+    white-space: unset;
+    width: max-content;
+    max-width: 250px;
+  }
+
   .area-lavoro {
     position: relative;
   }
