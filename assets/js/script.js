@@ -10,6 +10,8 @@ const pulsanteSostituisci = document.getElementById("pulsante-sostituisci");
 const pulsanteRandom = document.getElementById("pulsante-random");
 const pulsanteDownload = document.getElementById("pulsante-download");
 const pulsanteMenu = document.getElementById("pulsante-menu");
+const pulsanteSu = document.getElementById("pulsante-su");
+const pulsanteGiu = document.getElementById("pulsante-giu");
 
 let elementoSelezionato = null;
 let immagineAsideSelezionata = null;
@@ -27,6 +29,8 @@ pulsanteSostituisci.addEventListener("click", sostituisciSelezionato);
 pulsanteRandom.addEventListener("click", disposizioneRandom);
 pulsanteDownload.addEventListener("click", scaricaFoglio);
 pulsanteMenu.addEventListener("click", apriChiudiMenu);
+pulsanteSu.addEventListener("click", muoviElementoSu);
+pulsanteGiu.addEventListener("click", muoviElementoGiu);
 
 function apriChiudiMenu() {
   menuElementi.classList.toggle("aperto");
@@ -42,7 +46,6 @@ function clicSulFoglio(evento) {
     return;
   }
 
-  // Se clicco di nuovo sullo stesso elemento: deseleziona.
   if (cliccato === elementoSelezionato) {
     deselezionaTutto();
     return;
@@ -316,4 +319,54 @@ async function scaricaFoglio() {
     console.error("Errore durante il download:", errore);
     alert("Non è stato possibile scaricare il foglio. Controlla la Console.");
   }
+}
+
+function muoviElementoSu() {
+  if (elementoSelezionato === null) {
+    return;
+  }
+
+  const posizione = elementiInseriti.indexOf(elementoSelezionato);
+
+  if (posizione <= 0) {
+    return;
+  }
+
+  const elementoSopra = elementiInseriti[posizione - 1];
+
+  elementoSopra.before(elementoSelezionato);
+
+  elementiInseriti[posizione - 1] = elementoSelezionato;
+  elementiInseriti[posizione] = elementoSopra;
+
+  cronologia.push({
+    tipo: "scambio",
+    elementoA: elementoSelezionato,
+    elementoB: elementoSopra,
+  });
+}
+
+function muoviElementoGiu() {
+  if (elementoSelezionato === null) {
+    return;
+  }
+
+  const posizione = elementiInseriti.indexOf(elementoSelezionato);
+
+  if (posizione === -1 || posizione === elementiInseriti.length - 1) {
+    return;
+  }
+
+  const elementoSotto = elementiInseriti[posizione + 1];
+
+  elementoSotto.after(elementoSelezionato);
+
+  elementiInseriti[posizione + 1] = elementoSelezionato;
+  elementiInseriti[posizione] = elementoSotto;
+
+  cronologia.push({
+    tipo: "scambio",
+    elementoA: elementoSelezionato,
+    elementoB: elementoSotto,
+  });
 }
