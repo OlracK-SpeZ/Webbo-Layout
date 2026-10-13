@@ -104,6 +104,11 @@ function inserisciElementoInFondo(immagine) {
     tipo: "inserimento",
     elemento: nuovoElemento,
   });
+
+  nuovoElemento.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
+  });
 }
 
 function inserisciDopoSelezionato() {
@@ -125,6 +130,11 @@ function inserisciDopoSelezionato() {
   cronologia.push({
     tipo: "inserimento",
     elemento: nuovoElemento,
+  });
+
+  nuovoElemento.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest",
   });
 
   deselezionaTutto();
