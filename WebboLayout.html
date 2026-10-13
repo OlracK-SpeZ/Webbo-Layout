@@ -48,7 +48,7 @@
           id="pulsante-elimina"
           class="pulsante-icona"
           aria-label="Elimina elemento"
-          title="Elimina elemento: Seleziona un elemento dal foglio e poi premi il pulsante per attivare la funzione"
+          title="Elimina elemento: Seleziona un elemento dal foglio e poi premi il pulsante per attivare eliminarlo"
         >
           <span aria-hidden="true">×</span>
         </button>
@@ -75,7 +75,7 @@
           id="pulsante-inserisci-dopo"
           class="pulsante-icona"
           aria-label="Inserisci dopo"
-          title="Inserisci sotto: Seleziona un elemento dal foglio e uno dal menu, poi premi sul pulsante per attivare la funzione"
+          title="Inserisci sotto: Seleziona un elemento dal foglio e uno dal menu, poi premi sul pulsante per inserirlo sotto"
         >
           <span aria-hidden="true">+</span>
         </button>
@@ -83,17 +83,27 @@
           id="pulsante-sostituisci"
           class="pulsante-icona"
           aria-label="Sostituisci"
-          title="Sostituisci: Seleziona un elemento dal foglio e uno dal menu, poi premi sul pulsante per attivare la funzione"
+          title="Sostituisci: Seleziona un elemento dal foglio e uno dal menu, poi premi sul pulsante per sostituire gli elementi"
         >
           <span aria-hidden="true">⇄</span>
         </button>
       </div>
+
       <p class="page">
         <a
           href="https://github.com/OlracK-SpeZ"
           target="_blank"
           rel="noopener noreferrer"
           >GitHub page</a
+        >
+      </p>
+
+      <p class="page">
+        <a
+          href="#galleria"
+          target="_blank"
+          rel="noopener noreferrer"
+          >WebboGallery</a
         >
       </p>
       <button
@@ -262,6 +272,28 @@
         />
       </aside>
     </div>
+
+    <dialog id="modale-download">
+  <h2 id="title-mod">Download completato, ma non deve essere per forza un addio</h2>
+
+  <p id="p-mod">
+    Quando avrai realizzato il sito,
+    potrai caricare il risultato, attraverso screenshot o foto nella galleria, così che <strong>WebboLayout</strong> possa conservare per sempre il tuo piccolo <strong>capolavoro</strong>.
+    <br> Nella galleria troverai anche chi è passato prima di te, alcuni di loro hanno deciso di ripassare, caricando più risultati di più lavori e questa è tutt'ora la soddisfazione più bella.
+    <br>
+    <strong>Prenditi il tuo tempo, fai con calma</strong>, quando avrai finito di costruire torna su questa pagine e clicca sul link che porta alla <strong>galleria</strong>, li potrai caricare le tue foto. Nel caso in cui però tu avessi curiosità di vedere la galleria, puoi andarci anche adesso, basta premere il pulsante.
+    <br> Grazie di cuore dallo staff di
+    <br><br>
+    <cite><strong>WebboLayout</strong></cite>
+  </p>
+
+  <p>
+    <a id="a-mod" href="galleria.html">Apri la galleria</a>
+  </p>
+
+  <button id="chiudi-modale" autofocus>Chiudi</button>
+</dialog>
+
     <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.13/dist/html-to-image.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
