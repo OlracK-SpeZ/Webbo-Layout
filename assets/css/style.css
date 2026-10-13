@@ -343,6 +343,15 @@ button:disabled {
     max-width: 250px;
   }
 
+  .pulsante-icona:hover {
+  transform: none;
+  text-shadow: 1px 0px 10px var(--colore-secondario-scuro);
+}
+
+.pulsante-icona:hover::after {
+  text-shadow: none;
+}
+
   .area-lavoro {
     position: relative;
   }
