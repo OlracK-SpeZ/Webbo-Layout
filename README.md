@@ -14,7 +14,7 @@ In altre parole:
 L’utente seleziona l’elemento dal menu e lo posiziona sulla pagina. Il risultato è una specie di mappa visiva stilizzata: non un sito reale, non HTML, non CSS, non 
 un layout automatico con regole tecniche, ma un promemoria grafico della struttura che il creatore userà in seguito come riferimento quando scriverà il codice.
 
-ENGLISH TRANSLATE:::
+ENGLISH :::
 
 Webbo Layout is a Paint-like tool specialized for website mockups.
 
