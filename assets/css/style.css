@@ -266,6 +266,58 @@ button:disabled {
   cursor: not-allowed;
 }
 
+#modale-download {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  width: 600px;
+  height: 550px;
+
+  background-color: var(--colore-pannello-chiaro);
+}
+
+#title-mod {
+  margin-top: 5%;
+}
+
+#p-mod {
+  text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+
+  width: 90%;
+  margin: 2% 5%;
+}
+
+#a-mod {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: var(--colore-primario-chiaro);
+  color: var(--colore-pannello-scuro);
+  border: 2px solid var(--colore-pannello-scuro);
+  border-radius: 10px;
+  padding: 1rem;
+
+  cursor: pointer;
+}
+
+cite {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#chiudi-modale {
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+#modale-download::backdrop {
+  background-color: var(--colore-primario-scuro);
+  opacity: 0.9;
+}
 /*---------------------------------MOBILE---------------------------------*/
 @media (max-width: 768px) {
   .barra {
