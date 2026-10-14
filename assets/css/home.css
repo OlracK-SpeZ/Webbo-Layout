@@ -1,0 +1,357 @@
+body.page-scroll {
+    overflow-y: auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+    background-color: #fff;
+}
+
+header {
+  background-color: var(--colore-primario-scuro);
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+#top-titles,
+#top-title {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--colore-testo-chiaro);
+    margin: 0 10px;
+}
+
+#top-titles {
+  color: var(--colore-testo-scuro);
+}
+
+#top-titles:hover {
+  color: var(--colore-testo-chiaro);
+}
+
+#top-title:hover {
+    color: var(--colore-testo-scuro)
+}
+
+.img-hero {
+    background-color: var(--colore-primario-chiaro);
+}
+.img-hero:hover {
+    background-color: var(--colore-selezione-scuro);
+}
+/*------------------------------------------------MAIN-CONTENT-----------------------------------*/
+.main-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px 100px;
+}
+
+.titolo-pagina {
+    margin: 20px;
+    text-transform: uppercase;
+    color: var(--colore-primario-scuro);
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.5;
+    width: 500px;
+}
+
+.link-page,
+.link-final {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--colore-pannello-scuro);
+    color: var(--colore-testo-chiaro);
+    border-radius: 15px;
+
+    transition: color 0.3s ease-in-out;
+}
+
+.link-page:hover,
+.link-final:hover {
+    color: var(--colore-testo-scuro);
+    background-color: var(--colore-primario-chiaro);
+}
+/*----------------------------------------------FUNZIONAMENTO-------------------------*/
+.come-funziona {
+  margin-top: 100px;
+}
+
+.box {
+  display: flex;
+  margin: 100px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box2 {
+  flex-direction: row-reverse;
+}
+
+.box h2 {
+  font-size: 2rem;
+  color: var(--colore-primario-chiaro);
+  margin: 20px 0;
+}
+
+.box p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  width: 250px;
+}
+#titolo-funziona,
+#titolo-utile {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--colore-primario-scuro);
+}
+
+.img-fun {
+  border: 4px solid var(--colore-selezione-scuro);
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-fun:hover {
+  transform: translateY(-12px)
+}
+
+#first-img {
+  min-width: 35%;
+  height: auto;
+}
+/*----------------------------------------------------------UTILE--------------------------------*/
+.utile {
+  margin: 100px;
+}
+
+#titolo-utile {
+  margin: 100px;
+}
+
+.card-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid var(--colore-primario-scuro);
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--colore-primario-scuro);
+  margin: 20px 0;
+}
+
+.card p {
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--colore-secondario-scuro);
+  width: 200px;
+}
+
+.card span {
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-color: #02d402;
+
+  font-size: 2rem;
+}
+
+.link-final {
+  margin: 100px;
+}
+
+.btn-flex {
+  text-align: center;
+}
+/*------------------------------------------------------------FAQ-------------------------------------*/
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin: 100px;
+}
+
+.domanda {
+    color: var(--colore-primario-scuro);
+    margin: 5px 10px;
+}
+
+.risposta {
+    color: var(--colore-testo-scuro);
+    margin: 5px 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 80%;
+}
+/*----------------------------------------------LETTER-BOX---------------------------*/
+.letterbox {
+  max-width: 720px;
+  margin: 90px auto;
+  padding: 40px;
+  background-color: var(--colore-primario-chiaro);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.letterbox h2 {
+  margin-top: 0;
+  color: var(--colore-primario-scuro);
+}
+
+.letterbox p {
+  color: var(--colore-testo-scuro);
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.letterbox-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.letterbox-form label {
+  font-weight: bold;
+  color: var(--colore-primario-scuro);
+  margin-top: 12px;
+}
+
+.letterbox-form label span {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.letterbox-form input,
+.letterbox-form textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--colore-testo-scuro);
+  background-color: #fff;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.letterbox-form input:focus,
+.letterbox-form textarea:focus {
+  border-color: var(--colore-primario-scuro);
+}
+
+.letterbox-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.letterbox-button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--colore-testo-chiaro);
+  background-color: var(--colore-pannello-scuro);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.letterbox-button:hover {
+  background-color: var(--colore-primario-chiaro);
+  color: var(--colore-testo-scuro);
+}
+
+.letterbox-note {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.link a {
+    margin: 10px;
+}
+
+footer {
+    background-color: var(--colore-primario-scuro);
+}
+
+@media (max-width: 900px) {
+  .main-content,
+  .come-funziona,
+  .utile,
+  .faq {
+    margin: 50px 20px;
+  }
+
+  .main-content p {
+    width: fit-content;
+  }
+  
+  .box {
+    flex-direction: column;
+    text-align: center;
+    margin: 60px 0;
+    gap: 25px;
+  }
+
+  .box2 {
+    flex-direction: column;
+  }
+
+  .box p {
+    width: auto;
+    max-width: 420px;
+  }
+  
+  .box img {
+    width: 90%;
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+  }
+  .card p {
+    width: auto;
+  }
+
+  .link-final {
+    margin: 50px 0;
+  }
+}

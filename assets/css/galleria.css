@@ -1,0 +1,202 @@
+:root {
+  --colore-sfondo-pagina: #F7F1E7;
+  --colore-superficie: #EFE4D1;      
+
+  --colore-luce-solare: #E8D28E;     
+  --colore-ocra: #C6A65A;       
+
+  --colore-cannella: #A87556;    
+  --colore-autunnale: #765541;       
+
+  --colore-testo: #3F332D;          
+  --colore-testo-secondario: #796C61; 
+  --colore-bordo: #D8C8AE;           
+}
+
+body.page-scroll {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable both-edges;
+    background-color: var(--colore-sfondo-pagina);
+}
+
+header {
+  background-color: var(--colore-cannella);
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+main {
+    position: relative;
+}
+
+#top-titles,
+#top-title {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--colore-autunnale);
+    margin: 0 10px;
+}
+
+#top-titles {
+  color: var(--colore-ocra);
+}
+
+#top-titles:hover {
+  color: var(--colore-autunnale);
+}
+
+#top-title:hover {
+    color: var(--colore-ocra)
+}
+
+.img-hero {
+    background-color: var(--colore-luce-solare);
+}
+
+.img-hero:hover {
+    background-color: var(--colore-sfondo-pagina);
+}
+/*----------------------------------------BOX-PER-CARICARE-LE-FOTO------------------*/
+.barra-galleria {
+    text-align: center;
+    font-weight: bold;
+
+    color: var(--colore-testo);
+}
+
+.share-box {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,5%);
+
+    width: 800px;
+    height: 350px;
+
+    border: 2px solid var(--colore-testo);
+    border-radius: 20px;
+    background-color: var(--colore-autunnale);
+}
+
+.int-share-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 770px;
+    height: 320px;
+
+    border: 2px dashed var(--colore-ocra);
+    border-radius: 20px;
+    background-color: var(--colore-autunnale);
+}
+
+#t-share-box {
+    margin-top: 5%;
+    font-family: cursive;
+    font-size: 2.3rem;
+    color: var(--colore-luce-solare);
+}
+
+#st-share-box {
+    text-align: justify;
+    width: 80%;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-top: 2%;
+    color: var(--colore-luce-solare);
+}
+
+#btn-share-box {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-self: center;
+
+    margin-top: 50px;
+    padding: 1rem;
+
+    border-radius: 20px;
+    border: 2px solid var(--colore-ocra);
+    background-color: var(--colore-luce-solare);
+    color: var(--colore-testo);
+
+    cursor: pointer;
+
+    transition: color 0.3s ease-in-out;
+}
+
+#btn-share-box:hover {
+    background-color: var(--colore-ocra);
+    color: var(--colore-cannella);
+    border: 2px solid var(--colore-testo);
+}
+
+#p-share-box {
+    font-weight: 900;
+    color: var(--colore-luce-solare);
+}
+/*-------------------------------------------------------GALLERIA SCOOREVOLE-------------------*/
+.gallery-album {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.album-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.album-photo {
+  margin: 0;
+  max-width: 640px;
+}
+
+.album-photo img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 2px solid var(--colore-ocra);
+  background: var(--colore-superficie);
+}
+
+.album-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--colore-ocra);
+  background: var(--colore-luce-solare);
+  color: var(--colore-cannella);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.album-btn:hover {
+  background: var(--colore-ocra);
+  color: var(--colore-testo);
+}
+
+figcaption {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  color: var(--colore-testo);
+}
+
+.album-counter {
+  margin-top: 10px;
+  color: var(--colore-testo-secondario);
+}
