@@ -37,6 +37,13 @@ pulsanteChiudiModale.addEventListener("click", () => {
   modaleDownload.close();
 });
 
+const formSuggerimento = document.querySelector(".letterbox-form");
+
+
+window.addEventListener("pageshow", () => {
+  formSuggerimento.reset();
+});
+
 const contatoreElementi = document.getElementById("numero-elementi");
 
 
