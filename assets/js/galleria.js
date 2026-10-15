@@ -1,19 +1,9 @@
 const photos = [
   {
-    src: "assets/img/galleria/foto-01.jpg",
-    title: "Titolo della foto",
-    author: "Autore"
+    src: "assets/img/galleria/foto-01v.png",
+    title: "Pagina inesistente, per esercitarsi",
+    author: "Francesco"
   },
-  {
-    src: "assets/img/galleria/foto-02.jpg",
-    title: "Tramonto al lago",
-    author: "Mario Rossi"
-  },
-  {
-    src: "assets/img/galleria/foto-03.jpg",
-    title: "Titolo della foto",
-    author: "Nome dell’autore"
-  }
 ];
 
 let currentIndex = 0;
