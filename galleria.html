@@ -10,44 +10,57 @@
 
   <body class="page-scroll">
     <header>
-      <h2 id="top-title"><a href="WebboLayout.html">Webbo Layout</a></h2>
+      <h2 id="top-title"><a href="index.html">Webbo Home page</a></h2>
       <img
         class="img-hero"
         src="assets/img/Logo_Webbo_Layout-rb.png"
         alt="logo pagina"
       />
-      <h2 id="top-titles"><a href="galleria.html">Webbo Galleria</a></h2>
+      <h2 id="top-titles"><a href="WebboLayout.html">Webbo Layout</a></h2>
     </header>
 
     <h1 class="barra-galleria">Galleria Webbo Layout</h1>
 
     <main>
-
       <section class="gallery-album">
-  <h2 class="gallery-title">Galleria</h2>
+        <h2 class="gallery-title">Galleria</h2>
 
-  <div class="album-frame">
-    <button id="prev-btn" class="album-btn" aria-label="Foto precedente">‹</button>
+        <div class="album-frame">
+          <button id="prev-btn" class="album-btn" aria-label="Foto precedente">
+            ‹
+          </button>
 
-    <figure class="album-photo">
-      <img id="album-img" src="img.galleria" alt="galleria scorrevole">
-      <figcaption>
-        <span id="album-title"></span>
-        <span id="album-author"></span>
-      </figcaption>
-    </figure>
+          <figure class="album-photo">
+            <img id="album-img" src="img.galleria" alt="galleria scorrevole" />
+            <figcaption>
+              <span id="album-title"></span>
+              <span id="album-author"></span>
+            </figcaption>
+          </figure>
 
-    <button id="next-btn" class="album-btn" aria-label="Foto successiva">›</button>
-  </div>
+          <button id="next-btn" class="album-btn" aria-label="Foto successiva">
+            ›
+          </button>
+        </div>
 
-  <p id="album-counter" class="album-counter"></p>
-</section>
+        <p id="album-counter" class="album-counter"></p>
+      </section>
+
+      <div id="lightbox" class="lightbox">
+        <button id="lightbox-chiudi" class="lightbox-chiudi" type="button">
+          ✕
+        </button>
+        <img id="lightbox-img" class="lightbox-img"/>
+      </div>
 
       <div class="share-box">
         <div class="int-share-box">
           <h2 id="t-share-box">Carica le tue foto nella galleria</h2>
           <h4 id="st-share-box">
-            Premendo il pulsante si verrà reinderizzati sul form di 'pCloude', piattaforma di drive online, attraverso l'interfaccia inserisci il nome e la foto, o le foto. I file dopo essere stati controllati verranno inseriti nella galleria dall'admin.
+            Premendo il pulsante si verrà reinderizzati sul form di 'pCloude',
+            piattaforma di drive online, attraverso l'interfaccia inserisci il
+            nome e la foto, o le foto. I file dopo essere stati controllati
+            verranno inseriti nella galleria dall'admin.
           </h4>
 
           <a
