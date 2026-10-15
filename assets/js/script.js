@@ -37,6 +37,28 @@ pulsanteChiudiModale.addEventListener("click", () => {
   modaleDownload.close();
 });
 
+const contatoreElementi = document.getElementById("numero-elementi");
+
+
+function aggiornaContatoreElementi() {
+  const totale = foglio.querySelectorAll(".elemento").length;
+
+
+  contatoreElementi.textContent = `${totale}`;
+}
+
+
+const osservatoreFoglio = new MutationObserver(aggiornaContatoreElementi);
+
+
+osservatoreFoglio.observe(foglio, {
+  childList: true,
+  subtree: true,
+});
+
+
+aggiornaContatoreElementi();
+
 function apriChiudiMenu() {
   menuElementi.classList.toggle("aperto");
 }
