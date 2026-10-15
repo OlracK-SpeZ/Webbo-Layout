@@ -69,6 +69,13 @@ a {
   border-bottom: 2px solid var(--colore-bordo-scuro);
 }
 
+#numero-elementi {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0 0 0 20px;
+  color: var(--colore-selezione-scuro);
+}
+
 #titolo {
   font-size: 2em;
   font-weight: bold;
@@ -336,6 +343,10 @@ cite {
     padding: 0;
   }
 
+  #numero-elementi {
+    margin: 0;
+  }
+  
   #pulsante-annulla,
   #pulsante-elimina,
   #pulsante-inserisci-dopo {
