@@ -201,6 +201,46 @@ figcaption {
   color: var(--colore-testo-secondario);
 }
 
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  filter: blur(0.9);
+  z-index: 1000;
+  padding: 24px;
+}
+
+.lightbox.aperta {
+  display: flex;
+  transform: scale(1.2);
+}
+
+html.lightbox-aperta,
+body.lightbox-aperta {
+  overflow: hidden;
+}
+
+.lightbox-chiudi {
+  position: absolute;
+  top: 15%;
+  right: 35%;
+  transform: translateX();
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--colore-ocra);
+  border-radius: 50%;
+  background-color: var(--colore-luce-solare);
+  color: var(--colore-cannella);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.lightbox-chiudi:hover {
+  background: var(--colore-ocra);
+  color: var(--colore-testo);
+}
 /* ------------------------------MOBILE------------------------- */
 @media (max-width: 768px) {
 
