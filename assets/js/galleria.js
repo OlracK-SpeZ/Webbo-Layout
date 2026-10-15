@@ -15,6 +15,10 @@ const albumCounter = document.getElementById("album-counter");
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxChiudi = document.getElementById("lightbox-chiudi");
+
 function showPhoto(index) {
   const photo = photos[index];
 
@@ -36,3 +40,35 @@ nextBtn.addEventListener("click", () => {
 });
 
 showPhoto(currentIndex);
+
+albumImg.addEventListener("click", () => {
+  lightboxImg.src = albumImg.src;
+  lightboxImg.alt = albumImg.alt;
+
+
+  lightbox.classList.add("aperta");
+  document.body.classList.add("lightbox-aperta");
+});
+
+
+lightboxChiudi.addEventListener("click", chiudiLightbox);
+
+
+lightbox.addEventListener("click", (evento) => {
+  if (evento.target === lightbox) {
+    chiudiLightbox();
+  }
+});
+
+
+document.addEventListener("keydown", (evento) => {
+  if (evento.key === "Escape" && lightbox.classList.contains("aperta")) {
+    chiudiLightbox();
+  }
+});
+
+
+function chiudiLightbox() {
+  lightbox.classList.remove("aperta");
+  document.body.classList.remove("lightbox-aperta");
+}
