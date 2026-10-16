@@ -19,14 +19,18 @@
     </header>
     <main>
       <div class="main-content">
-        <h1 class="titolo-pagina"><a href="WebboLayout.html">Webbo Layout</a></h1>
+        <h1 class="titolo-pagina">
+          Webbo Layout
+        </h1>
         <p class="text" id="primo-text">
           Progetta la struttura del tuo sito prima di scrivere il codice. Webbo
           Layout ti aiuta a organizzare header, contenuti, immagini e sezioni in
           una bozza visiva, da usare come guida durante lo sviluppo in HTML e
           CSS.
         </p>
-        <a class="link-page" href="WebboLayout.html">Costruisci il tuo layout</a>
+        <a class="link-page" href="WebboLayout.html"
+          >Costruisci il tuo layout</a
+        >
       </div>
 
       <section class="come-funziona">
@@ -68,7 +72,8 @@
           </article>
           <img
             class="img-fun"
-            src="assets/img/screen3.png"
+            id="img-fun"
+            src="assets/img/mainDisplay.png"
             alt="screen del download"
           />
         </div>
@@ -80,52 +85,61 @@
         </h2>
         <div class="card-container">
           <article class="card card1">
-            <span>✓</span>
-            <h2>Principianti</h2>
-            <p>
-              visualizzare la struttura di una pagina prima di scrivere in HTML
-            </p>
+            <h2><span>✓</span>Principianti</h2>
+            <p>visualizzare la struttura di una pagina prima di scrivere in HTML</p>
           </article>
           <article class="card card2">
-            <span>✓</span>
-            <h2>Studenti</h2>
+            <h2><span>✓</span>Studenti</h2>
             <p>fare esercizi di progettazione web senza partire dal codice</p>
           </article>
           <article class="card card3">
-            <span>✓</span>
-            <h2>Sviluppatori</h2>
+            <h2><span>✓</span>Sviluppatori</h2>
             <p>preparare rapidamente wireframe semplici e condividerli</p>
           </article>
         </div>
       </section>
 
       <div class="btn-flex">
-        <a class="link-final" href="WebboLayout.html">Inizia Ora</a>
+        <a class="link-final" href="WebboLayout.html">Costruisci il tuo layout</a>
       </div>
 
       <section class="faq">
         <h2>FAQ</h2>
-        <h2 class="domanda">Webbo Layout è gratis?</h2>
-        <p class="risposta">Sì, Webbo Layout è totalmente gratuito</p>
 
-        <h2 class="domanda">È necessario iscriversi?</h2>
-        <p class="risposta">
-          No, non è richiesta nessuna iscrizione per usare Webbo Layout
-        </p>
-        <h2 class="domanda">Serve installare un programma?</h2>
-        <p class="risposta">
-          No, Webbo Layout si può usare direttamente dal browser
-        </p>
-        <h2 class="domanda">Posso scaricare il mio Layout?</h2>
-        <p class="risposta">
-          Sì, puoi scaricare la composizione realizzata come immagine
-        </p>
-        <h2 class="domanda">A cosa serve il layout creato?</h2>
-        <p class="risposta">
-          Puoi usarlo come bozza visiva per progettare una pagina web,
-          pianificare la disposizione dei contenuti ed usarla come guida visiva
-          mentre scrivi e costruisci il tuo sito.
-        </p>
+        <details>
+          <summary class="domanda">Webbo Layout è gratis?</summary>
+          <p class="risposta">Sì, Webbo Layout è totalmente gratuito</p>
+        </details>
+
+        <details>
+          <summary class="domanda">È necessario iscriversi?</summary>
+          <p class="risposta">
+            No, non è richiesta nessuna iscrizione per usare Webbo Layout
+          </p>
+        </details>
+
+        <details>
+          <summary class="domanda">Serve installare un programma?</summary>
+          <p class="risposta">
+            No, Webbo Layout si può usare direttamente dal browser
+          </p>
+        </details>
+
+        <details>
+          <summary class="domanda">Posso scaricare il mio Layout?</summary>
+          <p class="risposta">
+            Sì, puoi scaricare la composizione realizzata come immagine
+          </p>
+        </details>
+
+        <details>
+          <summary class="domanda">A cosa serve il layout creato?</summary>
+          <p class="risposta">
+            Puoi usarlo come bozza visiva per progettare una pagina web,
+            pianificare la disposizione dei contenuti ed usarla come guida
+            visiva mentre scrivi e costruisci il il tuo sito.
+          </p>
+        </details>
       </section>
 
       <section class="letterbox" id="suggerimenti">
@@ -150,7 +164,7 @@
           />
 
           <label for="email">Email <span>(facoltativa)</span></label>
-          <input type="email" id="email" name="email" placeholder="..." />
+          <input type="email" id="email" name="email" placeholder="Non riceverai newsletter o comunicazioni commerciali."/>
 
           <label for="messaggio">Il tuo suggerimento</label>
           <textarea
@@ -167,10 +181,46 @@
         </form>
       </section>
       <section class="link">
-        <h2><a href="#">Webbo Layout</a></h2>
+        <h2><a href="#">Webbo Layout ⬆️</a></h2>
       </section>
     </main>
-    <footer>Since by Olrack, 2026</footer>
+    <footer class="footer">
+  <div class="footer-contenuto">
+    <div class="footer-colonna">
+      <h2 class="footer-titolo">Webbo Layout</h2>
+      <p class="footer-testo">
+        Progetta la struttura del tuo sito prima di scrivere il codice.
+      </p>
+    </div>
+
+    <nav class="footer-colonna" aria-label="Collegamenti del sito">
+      <h3 class="footer-sottotitolo">Pagine</h3>
+      <ul class="footer-lista">
+        <li><a href="WebboLayout.html">Webbo Layout</a></li>
+        <li><a href="galleria.html">Webbo Galleria</a></li>
+        <li><a href="#suggerimenti">Suggerimenti</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-colonna">
+      <h3 class="footer-sottotitolo">Creato da</h3>
+      <p class="footer-testo">
+        <a
+          class="footer-creatore"
+          href="https://github.com/OlracK-SpeZ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Olrack
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-fondo">
+    <p>© 2026 Webbo Layout — Creato da Olrack</p>
+  </div>
+</footer>
     <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a7e74909b5f245bf839d36223502b8c3"}'></script>
   </body>
 </html>
