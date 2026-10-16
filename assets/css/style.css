@@ -332,6 +332,7 @@ cite {
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
+    overflow: hidden;
   }
 
   #titolo {
@@ -402,6 +403,7 @@ cite {
 
   .area-lavoro {
     position: relative;
+    overflow: hidden;
   }
 
   #foglio {
@@ -433,6 +435,7 @@ cite {
 
   #menu-elementi.aperto {
     transform: translateX(0);
+    visibility: visible;
   }
 
   #pulsante-menu {
